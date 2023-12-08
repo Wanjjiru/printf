@@ -6,7 +6,12 @@
 #include <stdlib.h>
 #include <limits.h>
 
-typedef struct her_format
+/**
+ * struct format - converts to printf
+ * @srt: character pointer
+ * @fxn: function specifier
+ */
+typedef struct format
 {
 	char *srt;
 	int (*fxn)();
